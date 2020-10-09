@@ -217,7 +217,7 @@ header nav ul li:after{
   .page3 .slide img{
       border-radius: 50%;
       margin: 0 2rem 0 0;
-
+    height: 15%;
   }
 
   .page3 .slide .text{
