@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    --text-color : white;
+    --secondary-color : rgb(36, 184, 36);
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+
+.page1{
+    margin-top: -60px;
+    left:0px;
+    right: 0px;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('/images/Zapheria-Bell.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh ;
+}
+
+header{
+    top: 0px;
+    left:0px;
+    right: 0px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 0 2rem;
+    flex-direction: row;
+  background: rgba(0,0,0,0.2);
+  position: fixed;
+    
+}
+
+
+
+header img{
+    width: 20%;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+header nav ul li a{
+    
+    text-decoration: none;
+    
+    color: var(--text-color); 
+    
+}
+
+
+header nav ul li:after {
+  display:block;
+  content: '';
+  padding-bottom: 0.5rem;
+  border-bottom: solid 2px var(--secondary-color);  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+
+.default{
+  padding-bottom: 0.5rem;
+    border-bottom: solid 2px var(--secondary-color);  
+}
+header nav ul li:hover::after { 
+    transform: scaleX(1); 
+}
+header nav ul li:after{  
+    transform-origin:  0% 100%;
+ }
+
+ /* ---------------------------content-------------------------------------------- */
+
+ article{
+     color: var(--text-color);
+     padding-top: 10%;
+     margin-top: 4%;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     
+ }
+
+ article h1{
+     font-size: 68px;
+     font-family: 'Peddana', serif;
+     font-weight: 500;
+    
+ }
+
+ article h3{
+    font-size: 24px;
+    width: 60%;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-align: center;
+ }
+
+ article .start-button{
+     width: 250px;
+     padding: 8px;
+     height:50px;
+     margin: 2rem;
+     border-radius: 30px;
+     border: none;
+     outline: none;
+     font-size: medium;
+ }
+
+ article .start-button:hover{
+     background-color: var(--secondary-color);
+ }
+
+ article img{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    animation: jump 2s ease infinite;
+ }
+
+ @keyframes jump {
+
+    0%   {top:50px;}
+    25%  {top:40px;}
+    50%  {top:50px;}
+    75%  {top:40px;}
+    100% {top:20px;}
+  }
+
+  /* -------------------------------PAGE2 ----------------------*/
+
+  .page2{
+      color: var(--text-color);
+      background: url('/images//page2-bg.jpg');
+    min-height: 100vh;
+    background-size: 100vw 100vh ;    
+  }
+
+  .container{
+      
+      padding: 5rem;
+      padding-top: 7rem;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+
+  .container img{
+      width: 200px;
+      height: 200px;
+  }
+
+  .container .card{
+      top: 10%;
+      display: grid;
+      place-items: center;
+      width: 30%;
+  }
+
+  .container .card p{
+    padding: 1.5rem;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  /* ------------------------PAGE 3---------------------- */
+
+  .page3{
+    height: 100vh;
+    background-size: 100vw 100vh ; 
+      background: url('/images/page3-bg.jpg');
+      display: grid;
+      place-items: center;
+
+  }
+
+  .page3 .slideshow-container{
+   
+      width: 70vw;
+      height: 40vh;
+      background: #20002c;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #aa31da, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  .page3 .slide {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 18px;
+    color: white;
+  }
+
+  .page3 .slide img{
+      border-radius: 50%;
+      margin: 0 2rem 0 0;
+
+  }
+
+  .page3 .slide .text{
+   width: 50%;
+    
+}
+
+  .dot{
+    position: relative;
+    margin-left: 3px;
+      width: 10px;
+      height: 10px;
+      background-color: var(--secondary-color);
+      color: transparent;
+       top: 50%;
+  }
+
+  .boxes{
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 4%;
+  }
