@@ -101,7 +101,7 @@ header nav ul li:after{
 
  article{
      color: var(--text-color);
-     padding-top: 10%;
+     padding-top: 15%;
      margin-top: 4%;
      display: flex;
      align-items: center;
@@ -157,13 +157,14 @@ header nav ul li:after{
   }
 
 
-   /* MOBILE VIEW */
+   /* --------------------------------MOBILE VIEW -------------------------------*/
  @media only screen and (max-width:720px){
  *{
     overflow-x: hidden;
 
  }
     .page1{
+
         margin-top: -60px;
         left:0px;
         right: 0px;
@@ -173,8 +174,13 @@ header nav ul li:after{
         background-repeat: no-repeat;
         background-size: 100vw 100vh ;
     }
+
+    
+
     header img{
-        width: 40%;
+        padding-top: 1rem;
+        width: 100%;
+        height: 100%;
     }
  
     
@@ -186,9 +192,9 @@ header nav ul li:after{
         align-content: center;
         justify-content: center;
         left: 60px;
-        top: 50px;
+        top: 60px;
         color: black;
-        background: brown;
+        background: rgb(0, 0, 0);
         width: 300px;
         height: 200px;
         animation: 1s slide;
@@ -209,6 +215,7 @@ header nav ul li:after{
 
     
     header button{
+        margin-left: 8rem;
         display: block;
         background: transparent;
         border: none;
@@ -216,8 +223,10 @@ header nav ul li:after{
     }
     header .toggleIcon{
         display: block;
+        
     }
     header .hamberger{
+        
         display: block;
         background-color: var(--secondary-color);
         width: 20px;
@@ -239,14 +248,14 @@ header nav ul li:after{
         line-height: 1;
         width: 60%;
         padding-top: 35%;
-        font-size: 60px;
+        font-size: 40px;
         font-family: 'Peddana', serif;
         text-align: center;
        
     }
    
     article h3{
-       font-size: 24px;
+       font-size: 16px;
        width: 80%;
        letter-spacing: 1px;
        font-family: 'Raleway', sans-serif;
@@ -258,10 +267,6 @@ header nav ul li:after{
         display: none;
     }
 
-
-    
-    
-     
    
 }
 
@@ -304,20 +309,58 @@ header nav ul li:after{
     line-height: 20px;
   }
 
+  /* _____________________MOBILE VIEW _______________________ */
+
+  @media only screen and (max-width:720px){
+
+    .page2{
+      background: url('page2-bg-mobileview.jpg');
+
+    }
+    .container{
+      
+        padding: 2rem;
+        padding-top: 2rem;
+        display: flex;
+        justify-content: flex-start;
+        /* justify-content: space-around; */
+        /* align-items: center; */
+        flex-direction: column;
+    }
+
+    
+
+  .container .card{
+      
+      font-size: 1rem;
+      width: 300px;
+  }
+
+  .container .card p{
+
+    padding: 1.5rem;
+    text-align: center;
+    line-height: 20px;
+    font-size: 0.9rem;
+  }
+
+  }
+
   /* ------------------------PAGE 3---------------------- */
 
   .page3{
     height: 100vh;
     background-size: 100vw 100vh ; 
-      background: url('page3-bg.jpg');
+      background: url('page3-bg-updated.jpg');
       display: grid;
       place-items: center;
 
   }
 
   .page3 .slideshow-container{
+    margin-top: 10rem;
    
-      width: 70vw;
+      width: 65vw;
       height: 40vh;
       background: #20002c;  /* fallback for old browsers */
       background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
@@ -337,6 +380,7 @@ header nav ul li:after{
       border-radius: 50%;
       margin: 0 2rem 0 0;
     height: 15%;
+    width: 15%;
   }
 
   .page3 .slide .text{
@@ -355,10 +399,73 @@ header nav ul li:after{
   }
 
   .boxes{
-      
       display: flex;
       align-items: center;
       justify-content: center;
       margin-top: 4%;
   }
 
+
+  /* MOBILE VIEW OF PAGE 3 */
+  @media only screen and (max-width:720px){
+    .page3{
+        height: 100vh;
+        background-size: 100vw 100vh ; 
+        background: url('page3-bg-mobile.jpg');
+        display: grid;
+        place-items: center;
+    }
+    
+      .page3 .slideshow-container{
+          padding: 1rem;
+          margin-bottom: 30%;
+          bottom: 30%;
+          width: 70vw;
+          height: 50vh;
+          background: #20002c;  /* fallback for old browsers */
+          background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to right, #aa31da, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+    
+      .page3 .slide{
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 18px;
+        color: white;
+      }
+    
+      .page3 .slide img{
+          border-radius: 50%;
+          margin: 0 2rem 0 0;
+          height: 30%;
+          margin: auto;
+          margin-bottom: 20px;
+          margin-top: 0px;
+          width: 30%;
+      }
+    
+      .page3 .slide .text{
+       width: 100%;
+        }
+    
+      .dot{
+        position: relative;
+        margin-left: 3px;
+          width: 10px;
+          height: 10px;
+          background-color: var(--secondary-color);
+          color: transparent;
+           top: 50%;
+      }
+    
+      .boxes{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 4%;
+      }
+    
+    
+  }
