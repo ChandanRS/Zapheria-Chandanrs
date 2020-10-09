@@ -37,7 +37,6 @@ function showSlides() {
 const toggler = document.getElementById("toggle")
 const menu = document.getElementById("nativagtionItems")
 console.log(toggler)
-menu.style.display='none'
 toggler.addEventListener('click',function(){
   if( menu.style.display == 'none'){
     menu.style.display = 'flex'

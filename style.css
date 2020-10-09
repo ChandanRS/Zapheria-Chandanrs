@@ -176,10 +176,8 @@ header nav ul li:after{
     header img{
         width: 40%;
     }
-/*     
-    header nav{
-        display: none;
-    } */
+ 
+    
 
     #nativagtionItems{
         position: fixed;
@@ -196,7 +194,7 @@ header nav ul li:after{
         animation: 1s slide;
         
     }
-
+    
     @keyframes slide {
         0%{
             
