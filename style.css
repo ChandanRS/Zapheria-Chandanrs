@@ -2,12 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
 
 }
 
 html {
     scroll-behavior: smooth;
+    
+
   }
 
 body{
@@ -79,6 +80,9 @@ header nav ul li:after {
   transition: transform 250ms ease-in-out;
 }
 
+header .toggleIcon{
+  display: none;
+}
 
 .default{
   padding-bottom: 0.5rem;
@@ -155,6 +159,10 @@ header nav ul li:after{
 
    /* MOBILE VIEW */
  @media only screen and (max-width:720px){
+ *{
+    overflow-x: hidden;
+
+ }
     .page1{
         margin-top: -60px;
         left:0px;
@@ -168,9 +176,56 @@ header nav ul li:after{
     header img{
         width: 40%;
     }
-
+/*     
     header nav{
         display: none;
+    } */
+
+    #nativagtionItems{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        left: 60px;
+        top: 50px;
+        color: black;
+        background: brown;
+        width: 300px;
+        height: 200px;
+        animation: 1s slide;
+        
+    }
+
+    @keyframes slide {
+        0%{
+            
+            height: 0px;
+        }
+        
+        100%{
+            height: 200px;
+           
+        }
+    }
+
+    
+    header button{
+        display: block;
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+    header .toggleIcon{
+        display: block;
+    }
+    header .hamberger{
+        display: block;
+        background-color: var(--secondary-color);
+        width: 20px;
+        height: 2px;
+        margin: 2px auto;
+        
     }
 
     article{
@@ -201,9 +256,14 @@ header nav ul li:after{
        text-align: center;
     }
 
-    article img{
-       display: none;
-     }
+    article a{
+        display: none;
+    }
+
+
+    
+    
+     
    
 }
 
