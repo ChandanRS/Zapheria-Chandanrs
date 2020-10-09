@@ -29,6 +29,8 @@ body{
     background-size: 100vw 100vh ;
 }
 
+
+
 header{
     top: 0px;
     left:0px;
@@ -89,6 +91,8 @@ header nav ul li:after{
     transform-origin:  0% 100%;
  }
 
+
+
  /* ---------------------------content-------------------------------------------- */
 
  article{
@@ -147,6 +151,63 @@ header nav ul li:after{
     75%  {top:40px;}
     100% {top:20px;}
   }
+
+
+   /* MOBILE VIEW */
+ @media only screen and (max-width:720px){
+    .page1{
+        margin-top: -60px;
+        left:0px;
+        right: 0px;
+        width: 100%;
+        min-height: 100vh;
+        background-image: url('Zapheria-Bell-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh ;
+    }
+    header img{
+        width: 40%;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    article{
+        margin-top: 10%;
+        color: var(--text-color);
+        padding-top: 35%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    article h1{
+        line-height: 1;
+        width: 60%;
+        padding-top: 35%;
+        font-size: 60px;
+        font-family: 'Peddana', serif;
+        text-align: center;
+       
+    }
+   
+    article h3{
+       font-size: 24px;
+       width: 80%;
+       letter-spacing: 1px;
+       font-family: 'Raleway', sans-serif;
+       font-weight: 400;
+       text-align: center;
+    }
+
+    article img{
+       display: none;
+     }
+   
+}
+
+
 
   /* -------------------------------PAGE2 ----------------------*/
 
@@ -242,3 +303,4 @@ header nav ul li:after{
       justify-content: center;
       margin-top: 4%;
   }
+
