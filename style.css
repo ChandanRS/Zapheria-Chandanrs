@@ -351,15 +351,14 @@ header nav ul li:after{
   .page3{
     height: 100vh;
     background-size: 100vw 100vh ; 
-      background: url('page3-bg-updated.jpg');
-      display: grid;
-      place-items: center;
+    background: url('page3-bg-updated.jpg');
+    display: grid;
+    place-items: center;
 
   }
 
   .page3 .slideshow-container{
     margin-top: 10rem;
-   
       width: 65vw;
       height: 40vh;
       background: #20002c;  /* fallback for old browsers */
@@ -416,18 +415,16 @@ header nav ul li:after{
         place-items: center;
     }
     
-      .page3 .slideshow-container{
-          padding: 1rem;
-          margin-bottom: 30%;
-          bottom: 30%;
-          width: 70vw;
-          height: 50vh;
+    .page3 .slideshow-container{
+        margin-top: 1rem;
+          width: 65vw;
+          height: 65vh;
           background: #20002c;  /* fallback for old browsers */
           background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
           background: linear-gradient(to right, #aa31da, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      }
-    
+      } 
       .page3 .slide{
+          padding: 1rem;
         margin-top: 3rem;
         display: flex;
         justify-content: center;
