@@ -24,7 +24,7 @@ body{
     right: 0px;
     width: 100%;
     min-height: 100vh;
-    background-image: url('./images/Zapheria-Bell.jpg');
+    background-image: url('Zapheria-Bell.jpg');
     background-repeat: no-repeat;
     background-size: 100vw 100vh ;
 }
@@ -152,7 +152,7 @@ header nav ul li:after{
 
   .page2{
       color: var(--text-color);
-      background: url('./images//page2-bg.jpg');
+      background: url('page2-bg.jpg');
     min-height: 100vh;
     background-size: 100vw 100vh ;    
   }
@@ -190,7 +190,7 @@ header nav ul li:after{
   .page3{
     height: 100vh;
     background-size: 100vw 100vh ; 
-      background: url('./images/page3-bg.jpg');
+      background: url('page3-bg.jpg');
       display: grid;
       place-items: center;
 
